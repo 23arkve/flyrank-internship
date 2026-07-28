@@ -72,8 +72,6 @@ pnpm build
 pnpm start
 ```
 
----
-
 ## Project Tree
 
 ```
@@ -100,8 +98,6 @@ pnpm start
 ├── package.json
 └── tailwind.config.js
 ```
-
----
 
 ## Code Style and Conventions
 
