@@ -4,14 +4,13 @@
 
 ## Overview
 
-This repository hosts the capstone project for the Frontend AI Engineering Track Internship at FlyRank AI. The project focuses on building a modern web application integrating AI capabilities, real-time data handling, and responsive user interfaces.
+This repository hosts the capstone project for the Frontend AI Engineering Track Internship at FlyRank AI. The specific project scope, goals, and requirements will be defined during the internship track.
 
-### Key Features
+### Planned Features
 
-- AI Capabilities: Integration with artificial intelligence services and streaming responses.
-- Dynamic Web UI: Modern component-driven interface built with Next.js and TailwindCSS.
-- Database and Auth: Data persistence and user authentication powered by Supabase.
-- Clean Architecture: Modular design separating UI components, custom hooks, and utility functions.
+- Scope TBD: Detailed project specifications and AI features will be documented here once finalized.
+- Modern Web UI: Component-driven interface built with Next.js, React, and TailwindCSS.
+- Backend and Database: Data persistence and authentication powered by Supabase.
 
 ## Tech Stack and Tools
 
