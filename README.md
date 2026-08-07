@@ -71,33 +71,6 @@ pnpm build
 pnpm start
 ```
 
-## Project Tree
-
-```
-├── app/
-│   ├── (home)/
-│   │   └── home/
-│   │       ├── _components/     # route-local UI components
-│   │       │   └── component.jsx
-│   │       ├── layout.jsx       # home layout boundary
-│   │       └── page.jsx         # home entry point
-│   ├── favicon.ico
-│   ├── globals.css              # global styles
-│   └── layout.jsx               # root application layout
-├── components/                  # shared, reusable UI elements
-│   └── ui/
-│       ├── button.jsx
-│       ├── card.jsx
-│       └── input.jsx
-├── lib/                         # shared utilities, hooks, and helpers
-│   ├── hooks/                   # custom application React hooks
-│   └── utils/                   # helper functions
-├── AGENTS.md                    # code styles, commit rules, and conventions
-├── next.config.js
-├── package.json
-└── tailwind.config.js
-```
-
 ## Code Style and Conventions
 
 This repository follows Conventional Commits for git commit messages. For detailed guidelines on coding practices, naming conventions, and workflow rules, please review [AGENTS.md](AGENTS.md).
