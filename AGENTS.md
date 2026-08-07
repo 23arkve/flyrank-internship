@@ -74,7 +74,7 @@ Global working agreements for Antigravity CLI in this repository.
 
 ## Tech Stack
 
-- Next.js, React, JavaScript, Tailwind CSS, Supabase, PNPM Package Manager
+- Next.js, React, JavaScript, Tailwind CSS, Prisma, PNPM Package Manager, Zod
 
 ## Code style guidelines & conventions
 
@@ -131,6 +131,16 @@ feat(lang): add Polish language
 - Write clear, self-documenting naming schemes over inline comments.
 - Apply structural early returns to eliminate nested `if` statements.
 - Format all code strictly with project linting tools before committing.
+
+### Forms & Validation
+
+- All new form validation must use zod schemas. No hand-rolled validation functions for new components.
+- Define one schema per form, colocated with the component or in a shared `schemas/` file if reused.
+- Use `.trim()` in the schema explicitly rather than relying on default string behavior, so trimmed vs raw length is a visible decision, not an accident.
+- Implement only the fields explicitly specified in the task. Never infer or add extra fields.
+- Error elements must pair `aria-describedby` with `aria-live="polite"` or `role="alert"`. Visual-only or association-only errors fail review.
+- Disabled/invalid button states must be correct on initial render, not only after first interaction. Test the untouched state explicitly.
+- Test suites must include adversarial cases (whitespace-only input, oversized paste, rapid double-submit), not just boundary-length values.
 
 ## Version Control
 
