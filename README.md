@@ -15,11 +15,11 @@ This repository hosts the capstone project for the Frontend AI Engineering Track
 ## Tech Stack and Tools
 
 - Framework: Next.js (App Router) / React
-- Database: Supabase
+- Database: Prisma
 - Styling: TailwindCSS, [daisyUI](https://daisyui.com/)
-- Languages: JavaScript (JSX)
+- Languages: TypeScript
 - Package Manager: PNPM
-- AI Tools: Antigravity CLI, Claude
+- AI Tools: Claude, Antigravity CLI, Cursor, OpenCode
 
 ## Getting Started
 

@@ -1,8 +1,31 @@
 # AGENTS.md instructions
 
-Global working agreements for Antigravity CLI.
+Global working agreements for Antigravity CLI in this repository.
 
 ## General guide for this repo
+
+### General Principles
+
+- Generate concise, short solutions for new modules or code.
+- Watch for over-engineering, oversized files needing refactor.
+- Watch for obvious bugs.
+- Watch for weird syntax/style mismatching the rest of the codebase.
+- Prioritize concise, precise code and docs changes.
+- No emojis or special characters in comments. Use hyphens and small caps in all comments.
+- Comments should be one-liner, and one sentence. If needed more context for better understanding, do not go more than 5 sentences.
+- Write `activity-log.md` in `/docs` to refer back if you are confused.
+- Make to-do list, run major changes by user first.
+- Review existing files before refactor or change.
+- Markdown files use kebab naming (ex. some-description-changes.md)
+- Do not auto-commit activity logs and docs.
+
+### Code Quality
+
+- Right data structures and algorithms for problem.
+- Do not expose data needlessly (less privilege).
+- No external libraries unless absolutely necessary.
+- Use project dependency file for correct versions.
+- Avoid redundancy unless improves usability.
 
 ### Editing files
 
@@ -108,3 +131,13 @@ feat(lang): add Polish language
 - Write clear, self-documenting naming schemes over inline comments.
 - Apply structural early returns to eliminate nested `if` statements.
 - Format all code strictly with project linting tools before committing.
+
+## Version Control
+
+- Commit after significant chnages, clear messages.
+- Keep commits focused, atomic.
+- No auto-push on any branch.
+
+## AI Restrictions
+
+- No credentials - passwords, API keys, tokens, connection strings.
