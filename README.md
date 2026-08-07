@@ -1,76 +1,62 @@
-# FlyRank AI - Frontend AI Engineering Track Internship Capstone
+# FlyRank AI Internship - Week 2: Round One
 
-> A web application built as the capstone project for the Frontend AI Engineering Track Internship at FlyRank AI.
+> Content Submission Studio built with Next.js (App Router), React, TypeScript, and TailwindCSS.
 
 ## Overview
 
-This repository hosts the capstone project for the Frontend AI Engineering Track Internship at FlyRank AI. The specific project scope, goals, and requirements will be defined during the internship track.
+This branch (`week2/round-one`) contains the implementation of **Content Submission Studio**, featuring a multi-field content submission form component (`TextContentForm`) with real-time validation, character limit tracking, accessible ARIA attributes, and interactive submission states.
 
-### Planned Features
+## Branch Features
 
-- Scope TBD: Detailed project specifications and AI features will be documented here once finalized.
-- Modern Web UI: Component-driven interface built with Next.js, React, and TailwindCSS.
-- Backend and Database: Data persistence and authentication powered by Supabase.
+- **Text Content Form Component** (`src/components/content-form.tsx`):
+  - **Title Field**: Required, 5 to 100 characters with character counter.
+  - **Email Field**: Required, validates standard email format.
+  - **Category Selector**: Required selection from pre-defined categories.
+  - **Content Body Field**: Required, 20 to 1000 characters with character counter.
+  - **Interactive States**: Blur-triggered error display, submit validation check, loading spinner, and post-submission detail view with reset option.
 
-## Tech Stack and Tools
+## Tech Stack
 
-- Framework: Next.js (App Router) / React
-- Database: Prisma
-- Styling: TailwindCSS, [daisyUI](https://daisyui.com/)
-- Languages: TypeScript
-- Package Manager: PNPM
-- AI Tools: Claude, Antigravity CLI, Cursor, OpenCode
+- **Framework**: Next.js 16 (App Router) / React 19
+- **Styling**: TailwindCSS 4
+- **Language**: TypeScript 5
+- **Package Manager**: pnpm
 
-## Getting Started
+## Quick Start
 
-### Prerequisites
-
-Ensure you have Node.js (v18 or higher) and PNPM installed on your system.
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/flyrank-internship.git
-cd flyrank-internship
-```
-
-### 2. Install dependencies
+### 1. Install dependencies
 
 ```bash
 pnpm install
 ```
 
-### 3. Set up environment variables
-
-Copy the example environment configuration file to `.env.local`:
-
-```bash
-cp .env.example .env.local
-```
-
-Ensure your `.env.local` contains the required keys:
-
-```env
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-# Add additional AI API keys here
-```
-
-### 4. Run the development server
+### 2. Start the development server
 
 ```bash
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view and interact with the form.
 
-### 5. Production build
+### 3. Build for production
 
 ```bash
 pnpm build
 pnpm start
 ```
 
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── globals.css          # Global styling & TailwindCSS imports
+│   ├── layout.tsx           # Root layout component
+│   └── page.tsx             # Home page rendering TextContentForm
+└── components/
+    └── content-form.tsx     # TextContentForm component with validation
+```
+
 ## Code Style and Conventions
 
-This repository follows Conventional Commits for git commit messages. For detailed guidelines on coding practices, naming conventions, and workflow rules, please review [AGENTS.md](AGENTS.md).
+This repository follows Conventional Commits for git commit messages. For guidelines on coding practices, naming conventions, and workflow rules, please review [AGENTS.md](AGENTS.md).
